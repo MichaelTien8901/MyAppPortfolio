@@ -8,13 +8,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
+        android:background="#ffdfeaf1"
         android:id="@+id/scrollView" >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:weightSum="1"
-            android:background="#ffdfeaf1"
             android:orientation="vertical">
 
             <TextView
