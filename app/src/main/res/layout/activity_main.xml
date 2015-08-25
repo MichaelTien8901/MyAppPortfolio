@@ -31,7 +31,7 @@
                 android:text="@string/spotify_streamer"
                 android:id="@+id/spotifyStreamerButton"
                 android:layout_marginTop="30dp"
-                android:onClick="OnClickSpotifyStreamButton"
+                android:onClick="OnClickButton"
                 />
 
             <Button
@@ -39,26 +39,30 @@
                 android:text="@string/score_app"
                 android:id="@+id/scoreAppButton"
                 android:layout_marginTop="10dp"
-                android:onClick="OnClickScoreAppButton"/>
+                android:onClick="OnClickButton"
+                />
             <Button
                 style="@style/ButtonOrange"
                 android:text="@string/library_app"
                 android:id="@+id/libraryAppBtn"
                 android:layout_marginTop="10dp"
-                android:onClick="OnClickLibraryAppButton"/>
+                android:onClick="OnClickButton"
+                />
             <Button
                 style="@style/ButtonOrange"
                 android:text="@string/build_it_bigger"
                 android:id="@+id/buildItBiggerButton"
                 android:layout_marginTop="10dp"
-                android:onClick="OnClickBuildItBiggerButton"/>
+                android:onClick="OnClickButton"
+                />
 
             <Button
                 style="@style/ButtonOrange"
                 android:text="@string/xyz_reader"
                 android:id="@+id/xyzReaderButton"
                 android:layout_marginTop="10dp"
-                android:onClick="OnClickXyzReaderButton"/>
+                android:onClick="OnClickButton"
+                />
 
             <Button
                 android:layout_width="193dp"
@@ -70,8 +74,8 @@
                 android:layout_marginTop="10dp"
                 android:background="#ff053e"
                 android:textColor="@android:drawable/screen_background_light"
-                android:onClick="OnClickCapstoneButton"/>
-
+                android:onClick="OnClickButton"
+                />
 
         </LinearLayout>
 

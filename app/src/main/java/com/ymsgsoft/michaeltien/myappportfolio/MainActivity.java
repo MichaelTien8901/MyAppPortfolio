@@ -45,40 +45,28 @@ public class MainActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast.makeText(context, text, duration).show();
     }
-    public void OnClickSpotifyStreamButton(View view)
-    {
-        // show the title
-        showToast("This button will lanuch spotify streamer!");
-    }
-    public void OnClickScoreAppButton(View view)
-    {
-        // show the title
-        showToast( "This button will lanuch score app!");
-    }
-    public void OnClickLibraryAppButton(View view)
-    {
-        // show the title
-        showToast( "This button will lanuch library app!");
-    }
-    public void OnClickBuildItBiggerButton(View view)
-    {
-        // show the title
-        showToast( "This button will lanuch build it bigger app!");
-    }
-    public void OnClickXyzReaderButton(View view)
-    {
-        // show the title
-        showToast( "This button will lanuch xyz reader app!");
-    }
-    public void OnClickCapstoneButton(View view)
-    {
-        // show the title
-        showToast( "This button will lanuch capstone app!");
-    }
     public void OnClickButton(View view)
     {
         // show the title
-        showToast( "This button will lanuch !");
+        switch( view.getId()) {
+            case R.id.spotifyStreamerButton:
+                showToast("This button will lanuch spotify streamer!");
+                break;
+            case R.id.scoreAppButton:
+                showToast( "This button will lanuch score app!");
+                break;
+            case R.id.libraryAppBtn:
+                showToast( "This button will lanuch library app!");
+                break;
+            case R.id.buildItBiggerButton:
+                showToast( "This button will lanuch build it bigger app!");
+                break;
+            case R.id.xyzReaderButton:
+                showToast( "This button will lanuch xyz reader app!");
+                break;
+            case R.id.capstoneButton:
+                showToast( "This button will lanuch capstone app!");
+                break;
+        } // switch
     }
-
 }
