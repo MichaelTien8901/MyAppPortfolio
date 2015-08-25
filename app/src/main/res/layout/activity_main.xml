@@ -65,15 +65,10 @@
                 />
 
             <Button
-                android:layout_width="193dp"
-                android:layout_height="wrap_content"
+                style="@style/ButtonRed"
                 android:text="@string/capstone_my_own_app"
                 android:id="@+id/capstoneButton"
-                android:layout_gravity="center_horizontal"
-                android:width="133dp"
                 android:layout_marginTop="10dp"
-                android:background="#ff053e"
-                android:textColor="@android:drawable/screen_background_light"
                 android:onClick="OnClickButton"
                 />
 
