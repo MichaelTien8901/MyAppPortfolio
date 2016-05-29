@@ -9,5 +9,8 @@
     <string name="library_app">LIBRARY APP</string>
     <string name="build_it_bigger">BUILD IT BIGGER</string>
     <string name="xyz_reader">XYZ READER</string>
-    <string name="capstone_my_own_app">CAPSTONE: MY OWN APP</string>
+    <string name="capstone_my_own_app">CAPSTONE: HUMMINGBIRD NAVIGATION</string>
+
+    <string name="capstone_package_name" translatable="false">"com.ymsgsoft.michaeltien.hummingbird"</string>
+    <string name="xyz_reader_package_name" translatable="false">com.example.xyzreader</string>
 </resources>

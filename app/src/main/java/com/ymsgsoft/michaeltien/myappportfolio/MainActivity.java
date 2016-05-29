@@ -1,6 +1,7 @@
 package com.ymsgsoft.michaeltien.myappportfolio;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -45,6 +46,15 @@ public class MainActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast.makeText(context, text, duration).show();
     }
+    public boolean launchApp(Context context, String package_name) {
+        Intent intent = context.getPackageManager().getLaunchIntentForPackage(package_name);
+        if ( intent != null) {
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+            return true;
+        } else
+            return false;
+    }
     public void OnClickButton(View view)
     {
         // show the title
@@ -62,10 +72,16 @@ public class MainActivity extends AppCompatActivity {
                 showToast( "This button will lanuch build it bigger app!");
                 break;
             case R.id.xyzReaderButton:
-                showToast( "This button will lanuch xyz reader app!");
+//                showToast( "This button will lanuch xyz reader app!");
+                if ( !launchApp(this, getString(R.string.xyz_reader_package_name))) {
+                    showToast( "Xyz reader app not installed!");
+                }
                 break;
             case R.id.capstoneButton:
-                showToast( "This button will lanuch capstone app!");
+//                showToast( "This button will lanuch capstone app!");
+                if ( !launchApp(this, getString(R.string.capstone_package_name))) {
+                       showToast( "Capstone app not installed!");
+                }
                 break;
         } // switch
     }
