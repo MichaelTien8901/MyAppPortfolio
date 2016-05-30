@@ -59,8 +59,10 @@ public class MainActivity extends AppCompatActivity {
     {
         // show the title
         switch( view.getId()) {
-            case R.id.spotifyStreamerButton:
-                showToast("This button will lanuch spotify streamer!");
+            case R.id.popularMoviesButton:
+                if ( !launchApp(this, getString(R.string.popular_movies_package_name))) {
+                    showToast( "Popular Movies app not installed!");
+                }
                 break;
             case R.id.scoreAppButton:
                 showToast( "This button will lanuch score app!");
