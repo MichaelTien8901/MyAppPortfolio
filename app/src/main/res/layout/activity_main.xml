@@ -28,7 +28,7 @@
 
             <Button
                 style="@style/ButtonOrange"
-                android:text="@string/spotify_streamer"
+                android:text="@string/popular_movies"
                 android:id="@+id/spotifyStreamerButton"
                 android:layout_marginTop="30dp"
                 android:onClick="OnClickButton"
