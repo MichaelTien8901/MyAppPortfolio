@@ -70,7 +70,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.libraryAppBtn:
-                showToast( "This button will lanuch library app!");
+                if ( !launchApp(this, getString(R.string.alexandria_package_name))) {
+                    showToast( "Library app not installed!");
+                }
                 break;
             case R.id.buildItBiggerButton:
                 if ( !launchApp(this, getString(R.string.build_it_bigger_package_name))) {
