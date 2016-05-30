@@ -65,6 +65,14 @@
                 />
 
             <Button
+                style="@style/ButtonOrange"
+                android:text="@string/android_wear_watch"
+                android:id="@+id/androidWearWatchButton"
+                android:layout_marginTop="10dp"
+                android:onClick="OnClickButton"
+                />
+
+            <Button
                 style="@style/ButtonRed"
                 android:text="@string/capstone_my_own_app"
                 android:id="@+id/capstoneButton"

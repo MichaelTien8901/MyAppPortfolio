@@ -72,13 +72,16 @@ public class MainActivity extends AppCompatActivity {
                 showToast( "This button will lanuch build it bigger app!");
                 break;
             case R.id.xyzReaderButton:
-//                showToast( "This button will lanuch xyz reader app!");
                 if ( !launchApp(this, getString(R.string.xyz_reader_package_name))) {
                     showToast( "Xyz reader app not installed!");
                 }
                 break;
+            case R.id.androidWearWatchButton:
+                if ( !launchApp(this, getString(R.string.udacity_watch_package_name))) {
+                    showToast( "Udacity Watch app not installed!");
+                }
+                break;
             case R.id.capstoneButton:
-//                showToast( "This button will lanuch capstone app!");
                 if ( !launchApp(this, getString(R.string.capstone_package_name))) {
                        showToast( "Capstone app not installed!");
                 }
