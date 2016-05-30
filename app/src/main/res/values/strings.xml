@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">My App Portfolio</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="my_nanodegree_apps">My Nanodegree Apps</string>
+    <!--button name definition-->
     <string name="spotify_streamer">SPOTIFY STREAMER</string>
     <string name="score_app">SCORES APP</string>
     <string name="library_app">LIBRARY APP</string>
@@ -11,8 +11,9 @@
     <string name="xyz_reader">XYZ READER</string>
     <string name="android_wear_watch">ANDROID WEAR WATCH</string>
     <string name="capstone_my_own_app">CAPSTONE: HUMMINGBIRD NAVIGATION</string>
-
+    <!--package name definition-->
     <string name="capstone_package_name" translatable="false">"com.ymsgsoft.michaeltien.hummingbird"</string>
     <string name="xyz_reader_package_name" translatable="false">com.example.xyzreader</string>
     <string name="udacity_watch_package_name" translatable="false">com.ymsgsoft.michaeltien.ymsgwatch.udacity</string>
+    <string name="build_it_bigger_package_name" translatable="false">com.udacity.gradle.builditbigger.free</string>
 </resources>

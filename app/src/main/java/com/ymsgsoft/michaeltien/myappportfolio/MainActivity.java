@@ -69,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
                 showToast( "This button will lanuch library app!");
                 break;
             case R.id.buildItBiggerButton:
-                showToast( "This button will lanuch build it bigger app!");
+                if ( !launchApp(this, getString(R.string.build_it_bigger_package_name))) {
+                    showToast( "Build it bigger app not installed!");
+                }
                 break;
             case R.id.xyzReaderButton:
                 if ( !launchApp(this, getString(R.string.xyz_reader_package_name))) {
