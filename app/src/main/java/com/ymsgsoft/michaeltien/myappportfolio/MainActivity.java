@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.scoreAppButton:
-                showToast( "This button will lanuch score app!");
+                if ( !launchApp(this, getString(R.string.football_score_package_name))) {
+                    showToast( "Football Score app not installed!");
+                }
                 break;
             case R.id.libraryAppBtn:
                 showToast( "This button will lanuch library app!");
